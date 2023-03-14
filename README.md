@@ -1,10 +1,10 @@
-### Superfluid Local Console
+# Superfluid Local Console
 
 The Superfluid Developer Console is a great resource when building any Superfluid related project. You can find the hosted version here when working on any live testnet or main network: https://console.superfluid.finance.
 
 However, it's much easier to tinker with new projects locally. This repo will help you run the console locally so that you can make this happen!
 
-# Steps to Run The Console Locally
+## Steps to Run The Console Locally
 1. Open the example-project folder in your terminal and run `npx hardhat node --hostname 0.0.0.0` (do this in a separate terminal window)
 2. Inside of `protocol-monorepo-subgraph`, run `yarn` at root, then `cd` into the `packages/ethereum-contracts` folder and run `yarn hardhat run dev-scripts/runDeployContractsAndToken.js --network localhost`. Note that when you run this script, you should see many logs in your hardhat console.
 3. Next, cd into the packages/subgraph folder of the `protocol-monorepo-subgraph` folder and run `yarn prepare-local`. Make sure you have docker available on your machine for step 4. 
@@ -14,7 +14,7 @@ However, it's much easier to tinker with new projects locally. This repo will he
 
 You’re up and running! Now you can use the console locally with your other work!
 
-# IF YOU MAKE A MISTAKE
+### IF YOU MAKE A MISTAKE
 
 Here’s how to troubleshoot if you make a mistake somewhere in this process and need to re start
 
@@ -22,7 +22,7 @@ Here’s how to troubleshoot if you make a mistake somewhere in this process and
 
 2) Delete the automatically generated `data` folder inside of the subgraph folder of the ethereum-contracts package. This is caching data from previous networks & deployments
 
-# IF YOU RUN INTO ISSUES
+### IF YOU RUN INTO ISSUES
 
 For example:
 - the subgraph isn’t indexing data, or the data it is indexing is old
