@@ -5,12 +5,13 @@ The Superfluid Developer Console is a great resource when building any Superflui
 However, it's much easier to tinker with new projects locally. This repo will help you run the console locally so that you can make this happen!
 
 ## Steps to Run The Console Locally
-1. Open the example-project folder in your terminal and run `npx hardhat node --hostname 0.0.0.0` (do this in a separate terminal window)
-2. Inside of `protocol-monorepo-subgraph`, run `yarn` at root, then `cd` into the `packages/ethereum-contracts` folder and run `yarn hardhat run dev-scripts/runDeployContractsAndToken.js --network localhost`. Note that when you run this script, you should see many logs in your hardhat console.
-3. Next, cd into the packages/subgraph folder of the `protocol-monorepo-subgraph` folder and run `yarn prepare-local`. Make sure you have docker available on your machine for step 4. 
+1. Open the example-project folder in your terminal and run `npm install` then `npx hardhat node --hostname 0.0.0.0` (do this in a separate terminal window)
+2. Inside of the example-project folder, run `yarn hardhat run dev-scripts/runDeployContractsAndToken.js --network localhost`. This will deploy the framework to your local env. You should see logs at this point
+3. Next, cd into the `subgraph` folder run `yarn` then `yarn prepare-local`. Make sure you have docker available on your machine for step 4. 
 4.  Inside of that same folder, run `docker-compose up`. At this stage, you should be able to see some logs in the node terminal window web3_client, etc.
 5. finally run: `yarn build-and-deploy-local` inside of the subgraph folder, this will deploy the subgraph and if the previous step went fine then querying `{events {id }}` at your local subgraph endpoint should yield some entities
-6. Start up the console locally by running `yarn dev` in the console folder
+6. Start up the console locally by running `yarn` then `yarn dev` in the `console` folder
+7. Create a stream in the example project folder to test it out by running the `wrapTokens` and `createFlow` scripts and specifying `--network localhost` like this: `npx hardhat run scripts/wrapTokens.js --network localhost` and `npx hardhat run scripts/createFlow.js --network localhost`
 
 You’re up and running! Now you can use the console locally with your other work!
 
