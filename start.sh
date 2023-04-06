@@ -36,7 +36,7 @@ sleep 10
 # Start the subgraph node in a Docker container
 (
   cd subgraph
-  cp -r ../ethereum-contracts/artifacts/contracts/**/*[a-zA-z0-9]*.json ./abis
+  # cp -r ../ethereum-contracts/artifacts/contracts/**/*[a-zA-z0-9]*.json ./abis ?? how to do this while not copying the .dbg.jsons
   # Run your two preparatory commands here, e.g.:
   yarn
   sleep 5
