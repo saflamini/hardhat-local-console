@@ -6,7 +6,7 @@ However, it's much easier to tinker with new projects locally. This repo will he
 
 ## Steps to Run The Console Locally
 1. Open the example-project folder in your terminal and run `npm install` then `npx hardhat node --hostname 0.0.0.0` (do this in a separate terminal window)
-2. Inside of the example-project folder, run `yarn hardhat run dev-scripts/runDeployContractsAndToken.js --network localhost`. This will deploy the framework to your local env. You should see logs at this point
+2. Inside of the example-project folder, run `yarn hardhat run scripts/runDeployContractsAndToken.js --network localhost`. This will deploy the framework to your local env. You should see logs at this point
 3. Next, cd into the `subgraph` folder run `yarn` then `yarn prepare-local`. Make sure you have docker available on your machine for step 4. 
 4.  Inside of that same folder, run `docker-compose up`. At this stage, you should be able to see some logs in the node terminal window web3_client, etc.
 5. finally run: `yarn build-and-deploy-local` inside of the subgraph folder, this will deploy the subgraph and if the previous step went fine then querying `{events {id }}` at your local subgraph endpoint should yield some entities

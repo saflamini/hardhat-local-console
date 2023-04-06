@@ -73,12 +73,22 @@
     },
     "dependencies": {
         "@decentral.ee/web3-helpers": "0.5.3",
+        "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+        "@nomiclabs/hardhat-ethers": "^2.0.0",
+        "@nomiclabs/hardhat-web3": "^2.0.0",
         "@openzeppelin/contracts": "4.8.0",
         "@superfluid-finance/js-sdk": "0.6.3",
         "@truffle/contract": "4.5.23",
+        "@typechain/ethers-v5": "^10.2.0",
+        "@typechain/hardhat": "^6.1.5",
+        "dotenv": "^16.0.3",
         "ethereumjs-tx": "2.1.2",
         "ethereumjs-util": "7.1.5",
-        "stack-trace": "0.0.10"
+        "hardhat": "^2.13.0",
+        "stack-trace": "0.0.10",
+        "ts-node": "^10.9.1",
+        "typechain": "^8.1.1",
+        "typescript": "^5.0.3"
     },
     "devDependencies": {
         "@nomiclabs/hardhat-truffle5": "^2.0.7",
