@@ -8,13 +8,14 @@ rm -f pids.txt
   cd example-project
   npm install
   sleep 5
-  npx hardhat node &
+  yarn localnode &
   echo $! >> pids.txt
 
   # Give the hardhat node some time to start
   sleep 10
 
-  yarn hardhat run scripts/runDeployContractsAndToken.js --network localhost
+
+  yarn execute ./scripts/runDeployContractsAndToken.js
 )
 
 
@@ -24,7 +25,8 @@ rm -f pids.txt
 # Run this step for subgraph prep
 (
   cd ethereum-contracts
-  yarn run-hardhat compile
+  yarn
+  yarn build:contracts-hardhat
 )
 
 # Wait for contracts to deploy
@@ -34,6 +36,7 @@ sleep 10
 # Start the subgraph node in a Docker container
 (
   cd subgraph
+  # cp -r ../ethereum-contracts/artifacts/contracts/**/*[a-zA-z0-9]*.json ./abis ?? how to do this while not copying the .dbg.jsons
   # Run your two preparatory commands here, e.g.:
   yarn
   sleep 5

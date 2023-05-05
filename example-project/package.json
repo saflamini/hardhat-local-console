@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "localnode": "hardhat node",
+    "compile": "hardhat compile",
+    "execute": "hardhat run $1 --network localhost"
+  },
   "name": "hardhat-project",
   "devDependencies": {
     "@ethersproject/abi": "^5.7.0",
