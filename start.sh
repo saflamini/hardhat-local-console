@@ -55,7 +55,7 @@ sleep 3 # Wait for the subgraph to be ready
 (
   cd console
   yarn install
-  yarn dev &
+  yarn run dev &
   echo $! >> pids.txt
 )
 

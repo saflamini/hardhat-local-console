@@ -28,6 +28,7 @@ const [account1, account2, account3, account4] = await ethers.getSigners();
 
   //send stream from account 1 to account 2
   const createFlowOperation = ethx.createFlow({
+      sender: account1.address,
       receiver: account2.address,
       flowRate: "750000000000"
   });

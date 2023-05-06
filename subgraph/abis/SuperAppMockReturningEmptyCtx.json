@@ -1,0 +1,164 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "SuperAppMockReturningEmptyCtx",
+  "sourceName": "contracts/mocks/SuperAppMocks.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperfluid",
+          "name": "host",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperToken",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "afterAgreementCreated",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperToken",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "afterAgreementTerminated",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperToken",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "beforeAgreementCreated",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperToken",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "beforeAgreementTerminated",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161037638038061037683398101604081905261002f916100b3565b600080546001600160a01b0319166001600160a01b03831690811782556040805163bd1c448b60e01b815260016004820152602481019190915260448101929092529063bd1c448b90606401600060405180830381600087803b15801561009557600080fd5b505af11580156100a9573d6000803e3d6000fd5b50505050506100e3565b6000602082840312156100c557600080fd5b81516001600160a01b03811681146100dc57600080fd5b9392505050565b610284806100f26000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806330d9c9151461005157806353c11f991461006a5780635f9e7d7714610051578063d86ed3e51461006a575b600080fd5b61006861005f3660046100e4565b50505050505050565b005b610068610078366004610183565b505050505050505050565b6001600160a01b038116811461009857600080fd5b50565b60008083601f8401126100ad57600080fd5b50813567ffffffffffffffff8111156100c557600080fd5b6020830191508360208285010111156100dd57600080fd5b9250929050565b600080600080600080600060a0888a0312156100ff57600080fd5b873561010a81610083565b9650602088013561011a81610083565b955060408801359450606088013567ffffffffffffffff8082111561013e57600080fd5b61014a8b838c0161009b565b909650945060808a013591508082111561016357600080fd5b506101708a828b0161009b565b989b979a50959850939692959293505050565b600080600080600080600080600060c08a8c0312156101a157600080fd5b89356101ac81610083565b985060208a01356101bc81610083565b975060408a0135965060608a013567ffffffffffffffff808211156101e057600080fd5b6101ec8d838e0161009b565b909850965060808c013591508082111561020557600080fd5b6102118d838e0161009b565b909650945060a08c013591508082111561022a57600080fd5b506102378c828d0161009b565b91508093505080915050929598509295985092959856fea264697066735822122071aa1e0011149cb511fbf2b01d148020b9ae685c21c2375b4c30fbd5435ac90f64736f6c63430008100033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806330d9c9151461005157806353c11f991461006a5780635f9e7d7714610051578063d86ed3e51461006a575b600080fd5b61006861005f3660046100e4565b50505050505050565b005b610068610078366004610183565b505050505050505050565b6001600160a01b038116811461009857600080fd5b50565b60008083601f8401126100ad57600080fd5b50813567ffffffffffffffff8111156100c557600080fd5b6020830191508360208285010111156100dd57600080fd5b9250929050565b600080600080600080600060a0888a0312156100ff57600080fd5b873561010a81610083565b9650602088013561011a81610083565b955060408801359450606088013567ffffffffffffffff8082111561013e57600080fd5b61014a8b838c0161009b565b909650945060808a013591508082111561016357600080fd5b506101708a828b0161009b565b989b979a50959850939692959293505050565b600080600080600080600080600060c08a8c0312156101a157600080fd5b89356101ac81610083565b985060208a01356101bc81610083565b975060408a0135965060608a013567ffffffffffffffff808211156101e057600080fd5b6101ec8d838e0161009b565b909850965060808c013591508082111561020557600080fd5b6102118d838e0161009b565b909650945060a08c013591508082111561022a57600080fd5b506102378c828d0161009b565b91508093505080915050929598509295985092959856fea264697066735822122071aa1e0011149cb511fbf2b01d148020b9ae685c21c2375b4c30fbd5435ac90f64736f6c63430008100033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

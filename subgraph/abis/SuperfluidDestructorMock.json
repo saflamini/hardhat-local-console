@@ -1,0 +1,28 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "SuperfluidDestructorMock",
+  "sourceName": "contracts/mocks/SuperfluidDestructorMock.sol",
+  "abi": [
+    {
+      "stateMutability": "nonpayable",
+      "type": "fallback"
+    },
+    {
+      "inputs": [],
+      "name": "NON_UPGRADABLE_DEPLOYMENT",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60a06040526000608052348015601457600080fd5b50608051609c61002d600039600060300152609c6000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063cd312ec414602c575b6000ff5b60527f000000000000000000000000000000000000000000000000000000000000000081565b604051901515815260200160405180910390f3fea2646970667358221220e19c9af11f89ff5b9cdbe7cd15f92e6e9de562374bf7901b87cb2747ddaa874364736f6c63430008100033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063cd312ec414602c575b6000ff5b60527f000000000000000000000000000000000000000000000000000000000000000081565b604051901515815260200160405180910390f3fea2646970667358221220e19c9af11f89ff5b9cdbe7cd15f92e6e9de562374bf7901b87cb2747ddaa874364736f6c63430008100033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

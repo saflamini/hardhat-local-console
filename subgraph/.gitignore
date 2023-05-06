@@ -1,6 +1,5 @@
 build/
 generated/
-abis/
 yarn.lock
 data/
 package-lock.json

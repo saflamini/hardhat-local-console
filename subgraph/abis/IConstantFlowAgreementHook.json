@@ -1,0 +1,159 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IConstantFlowAgreementHook",
+  "sourceName": "contracts/interfaces/agreements/IConstantFlowAgreementHook.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperfluidToken",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "receiver",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "flowOperator",
+              "type": "address"
+            },
+            {
+              "internalType": "int96",
+              "name": "flowRate",
+              "type": "int96"
+            }
+          ],
+          "internalType": "struct IConstantFlowAgreementHook.CFAHookParams",
+          "name": "newFlowData",
+          "type": "tuple"
+        }
+      ],
+      "name": "onCreate",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperfluidToken",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "receiver",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "flowOperator",
+              "type": "address"
+            },
+            {
+              "internalType": "int96",
+              "name": "flowRate",
+              "type": "int96"
+            }
+          ],
+          "internalType": "struct IConstantFlowAgreementHook.CFAHookParams",
+          "name": "newFlowData",
+          "type": "tuple"
+        },
+        {
+          "internalType": "int96",
+          "name": "oldFlowRate",
+          "type": "int96"
+        }
+      ],
+      "name": "onDelete",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperfluidToken",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "receiver",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "flowOperator",
+              "type": "address"
+            },
+            {
+              "internalType": "int96",
+              "name": "flowRate",
+              "type": "int96"
+            }
+          ],
+          "internalType": "struct IConstantFlowAgreementHook.CFAHookParams",
+          "name": "newFlowData",
+          "type": "tuple"
+        },
+        {
+          "internalType": "int96",
+          "name": "oldFlowRate",
+          "type": "int96"
+        }
+      ],
+      "name": "onUpdate",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

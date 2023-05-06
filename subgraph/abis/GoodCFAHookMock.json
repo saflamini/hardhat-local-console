@@ -1,0 +1,305 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "GoodCFAHookMock",
+  "sourceName": "contracts/mocks/CFAHookMocks.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "NOT_CFA",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NOT_OWNER",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "contract ISuperfluidToken",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "receiver",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "flowOperator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "int96",
+          "name": "flowRate",
+          "type": "int96"
+        }
+      ],
+      "name": "OnCreateEvent",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "contract ISuperfluidToken",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "receiver",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "flowOperator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "int96",
+          "name": "flowRate",
+          "type": "int96"
+        },
+        {
+          "indexed": false,
+          "internalType": "int96",
+          "name": "oldFlowRate",
+          "type": "int96"
+        }
+      ],
+      "name": "OnDeleteEvent",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "contract ISuperfluidToken",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "receiver",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "flowOperator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "int96",
+          "name": "flowRate",
+          "type": "int96"
+        },
+        {
+          "indexed": false,
+          "internalType": "int96",
+          "name": "oldFlowRate",
+          "type": "int96"
+        }
+      ],
+      "name": "OnUpdateEvent",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperfluidToken",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "receiver",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "flowOperator",
+              "type": "address"
+            },
+            {
+              "internalType": "int96",
+              "name": "flowRate",
+              "type": "int96"
+            }
+          ],
+          "internalType": "struct IConstantFlowAgreementHook.CFAHookParams",
+          "name": "newFlowData",
+          "type": "tuple"
+        }
+      ],
+      "name": "onCreate",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperfluidToken",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "receiver",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "flowOperator",
+              "type": "address"
+            },
+            {
+              "internalType": "int96",
+              "name": "flowRate",
+              "type": "int96"
+            }
+          ],
+          "internalType": "struct IConstantFlowAgreementHook.CFAHookParams",
+          "name": "newFlowData",
+          "type": "tuple"
+        },
+        {
+          "internalType": "int96",
+          "name": "oldFlowRate",
+          "type": "int96"
+        }
+      ],
+      "name": "onDelete",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperfluidToken",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "receiver",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "flowOperator",
+              "type": "address"
+            },
+            {
+              "internalType": "int96",
+              "name": "flowRate",
+              "type": "int96"
+            }
+          ],
+          "internalType": "struct IConstantFlowAgreementHook.CFAHookParams",
+          "name": "newFlowData",
+          "type": "tuple"
+        },
+        {
+          "internalType": "int96",
+          "name": "oldFlowRate",
+          "type": "int96"
+        }
+      ],
+      "name": "onUpdate",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ConstantFlowAgreementV1",
+          "name": "_cfaV1",
+          "type": "address"
+        }
+      ],
+      "name": "setCFA",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60a060405234801561001057600080fd5b50336080526080516104a461003060003960006101ba01526104a46000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80632742e95a146100515780636ac5bc3114610078578063ad53099b1461008b578063e3d8fefe146100a0575b600080fd5b61006461005f366004610392565b6100b3565b604051901515815260200160405180910390f35b610064610086366004610392565b61013a565b61009e6100993660046103d8565b6101af565b005b6100646100ae3660046103fc565b61021a565b600080546001600160a01b031633146100df57604051631f9bdf8b60e21b815260040160405180910390fd5b7f384aa14da139a61bae36f996306e6f00f1d268225166dc28658f4e767a5441948484600001518560200151866040015187606001518760405161012896959493929190610432565b60405180910390a15060019392505050565b600080546001600160a01b0316331461016657604051631f9bdf8b60e21b815260040160405180910390fd5b7f93d782d1ed815a911862320347e0992d5c7f533820b0b3cdf30f50786076df028484600001518560200151866040015187606001518760405161012896959493929190610432565b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146101f8576040516338ebc58960e11b815260040160405180910390fd5b600080546001600160a01b0319166001600160a01b0392909216919091179055565b600080546001600160a01b0316331461024657604051631f9bdf8b60e21b815260040160405180910390fd5b7f38b974273537de1272ddb15a1313c9fe0fd4455c11ccceb5a529e0654f7d321b8383600001518460200151856040015186606001516040516102be9594939291906001600160a01b039586168152938516602085015291841660408401529092166060820152600b9190910b608082015260a00190565b60405180910390a150600192915050565b6001600160a01b03811681146102e457600080fd5b50565b8035600b81900b81146102f957600080fd5b919050565b60006080828403121561031057600080fd5b6040516080810181811067ffffffffffffffff8211171561034157634e487b7160e01b600052604160045260246000fd5b6040529050808235610352816102cf565b81526020830135610362816102cf565b60208201526040830135610375816102cf565b6040820152610386606084016102e7565b60608201525092915050565b600080600060c084860312156103a757600080fd5b83356103b2816102cf565b92506103c185602086016102fe565b91506103cf60a085016102e7565b90509250925092565b6000602082840312156103ea57600080fd5b81356103f5816102cf565b9392505050565b60008060a0838503121561040f57600080fd5b823561041a816102cf565b915061042984602085016102fe565b90509250929050565b6001600160a01b0396871681529486166020860152928516604085015293166060830152600b92830b608083015290910b60a082015260c0019056fea2646970667358221220b14334fb61dcd93f00d8d03a3dbeb0bbb4ed57db734e76ebd69c7e7093f627cf64736f6c63430008100033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c80632742e95a146100515780636ac5bc3114610078578063ad53099b1461008b578063e3d8fefe146100a0575b600080fd5b61006461005f366004610392565b6100b3565b604051901515815260200160405180910390f35b610064610086366004610392565b61013a565b61009e6100993660046103d8565b6101af565b005b6100646100ae3660046103fc565b61021a565b600080546001600160a01b031633146100df57604051631f9bdf8b60e21b815260040160405180910390fd5b7f384aa14da139a61bae36f996306e6f00f1d268225166dc28658f4e767a5441948484600001518560200151866040015187606001518760405161012896959493929190610432565b60405180910390a15060019392505050565b600080546001600160a01b0316331461016657604051631f9bdf8b60e21b815260040160405180910390fd5b7f93d782d1ed815a911862320347e0992d5c7f533820b0b3cdf30f50786076df028484600001518560200151866040015187606001518760405161012896959493929190610432565b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146101f8576040516338ebc58960e11b815260040160405180910390fd5b600080546001600160a01b0319166001600160a01b0392909216919091179055565b600080546001600160a01b0316331461024657604051631f9bdf8b60e21b815260040160405180910390fd5b7f38b974273537de1272ddb15a1313c9fe0fd4455c11ccceb5a529e0654f7d321b8383600001518460200151856040015186606001516040516102be9594939291906001600160a01b039586168152938516602085015291841660408401529092166060820152600b9190910b608082015260a00190565b60405180910390a150600192915050565b6001600160a01b03811681146102e457600080fd5b50565b8035600b81900b81146102f957600080fd5b919050565b60006080828403121561031057600080fd5b6040516080810181811067ffffffffffffffff8211171561034157634e487b7160e01b600052604160045260246000fd5b6040529050808235610352816102cf565b81526020830135610362816102cf565b60208201526040830135610375816102cf565b6040820152610386606084016102e7565b60608201525092915050565b600080600060c084860312156103a757600080fd5b83356103b2816102cf565b92506103c185602086016102fe565b91506103cf60a085016102e7565b90509250925092565b6000602082840312156103ea57600080fd5b81356103f5816102cf565b9392505050565b60008060a0838503121561040f57600080fd5b823561041a816102cf565b915061042984602085016102fe565b90509250929050565b6001600160a01b0396871681529486166020860152928516604085015293166060830152600b92830b608083015290910b60a082015260c0019056fea2646970667358221220b14334fb61dcd93f00d8d03a3dbeb0bbb4ed57db734e76ebd69c7e7093f627cf64736f6c63430008100033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "SuperAppMockNotSelfRegistering",
+  "sourceName": "contracts/mocks/SuperAppMocks.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220271196009ca1d0689adc7a095899b725cebd6f3104e6776eb15f10b15144b6cd64736f6c63430008100033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220271196009ca1d0689adc7a095899b725cebd6f3104e6776eb15f10b15144b6cd64736f6c63430008100033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

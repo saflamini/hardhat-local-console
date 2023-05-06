@@ -1,0 +1,27 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "SuperAppMockUsingDeprecatedRegisterApp",
+  "sourceName": "contracts/mocks/SuperAppMocks.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISuperfluid",
+          "name": "host",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "configWord",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b5060405161010f38038061010f833981016040819052602c91608a565b6040516315a722b960e31b8152600481018290526001600160a01b0383169063ad3915c890602401600060405180830381600087803b158015606d57600080fd5b505af11580156080573d6000803e3d6000fd5b50505050505060c2565b60008060408385031215609c57600080fd5b82516001600160a01b038116811460b257600080fd5b6020939093015192949293505050565b603f806100d06000396000f3fe6080604052600080fdfea2646970667358221220bc214447784eefa135747dd934c47234d99b42e1ba6d709916abfc2b2bcc2cf464736f6c63430008100033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220bc214447784eefa135747dd934c47234d99b42e1ba6d709916abfc2b2bcc2cf464736f6c63430008100033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
