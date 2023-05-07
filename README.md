@@ -10,10 +10,11 @@ However, it's much easier to tinker with new projects locally. This repo will he
 
 ## Steps to Run The Console Locally
 
-1. Run sh start.sh
-2. If you receive an error that the subgraph was not deployed due to a 'connection refused' error or similar, then cd into ./subgraph and run `yarn build-and-deploy-local`
-3. Create a stream in the example project folder to test it out by running the `wrapTokens` and `createFlow` scripts and specifying `--network localhost` like this: `npx hardhat run scripts/wrapTokens.js --network localhost` and `npx hardhat run scripts/createFlow.js --network localhost`
-4. Head to your local console running on localhost:3000 and see your newly created stream in the 'Hardhat' tab!
+1. Start docker on your machine
+2. Run sh start.sh at root
+3. cd into ./subgraph and run `yarn deploy-local`
+4. Create a stream in the example project folder to test it out by running the `wrapTokens` and `createFlow` scripts and specifying `--network localhost` like this: `npx hardhat run scripts/wrapTokens.js --network localhost` and `npx hardhat run scripts/createFlow.js --network localhost`
+5. Head to your local console running on localhost:3000 and see your newly created stream in the 'Hardhat' tab!
 
 You’re up and running! Now you can use the console locally with your other work!
 
