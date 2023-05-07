@@ -44,8 +44,8 @@ sleep 10
   sleep 3
   docker-compose up -d
   sleep 60
-  # yarn build-and-deploy-local does not work when run in this context. Need to run the below command, and then separately run yarn deploy-local
-  yarn codegen && yarn create-local
+  # yarn build-and-deploy-local does may work when run in this context. If it fails, run it outside of the context of this script
+  yarn build-and-deploy-local
   sleep 10
   # yarn deploy-local
 )
