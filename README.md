@@ -4,14 +4,16 @@ The Superfluid Developer Console is a great resource when building any Superflui
 
 However, it's much easier to tinker with new projects locally. This repo will help you run the console locally so that you can make this happen!
 
+## Prerequisites
+1. You must have docker installed and open on your machine. If it's not open, you'll get errors that the 'docker daemon is not running'
+2. Make sure that your port 8545 is open and that you don't have any processes already running on port 5001 or port 5432. To check whether or not a process is running on these ports, you can use `lsof -i :8545` and then kill those process by taking the PID number returned by `lsof` and running `kill PID`
+
 ## Steps to Run The Console Locally
-1. Open the example-project folder in your terminal and run `npm install` then `npx hardhat node --hostname 0.0.0.0` (do this in a separate terminal window)
-2. Inside of the example-project folder, run `yarn hardhat run scripts/runDeployContractsAndToken.js --network localhost`. This will deploy the framework to your local env. You should see logs at this point
-3. Next, cd into the `subgraph` folder run `yarn` then `yarn prepare-local`. Make sure you have docker available on your machine for step 4. 
-4.  Inside of that same folder, run `docker-compose up`. At this stage, you should be able to see some logs in the node terminal window web3_client, etc.
-5. finally run: `yarn build-and-deploy-local` inside of the subgraph folder, this will deploy the subgraph and if the previous step went fine then querying `{events {id }}` at your local subgraph endpoint should yield some entities
-6. Start up the console locally by running `yarn` then `yarn dev` in the `console` folder
-7. Create a stream in the example project folder to test it out by running the `wrapTokens` and `createFlow` scripts and specifying `--network localhost` like this: `npx hardhat run scripts/wrapTokens.js --network localhost` and `npx hardhat run scripts/createFlow.js --network localhost`
+
+1. Run sh start.sh
+2. If you receive an error that the subgraph was not deployed due to a 'connection refused' error or similar, then cd into ./subgraph and run `yarn build-and-deploy-local`
+3. Create a stream in the example project folder to test it out by running the `wrapTokens` and `createFlow` scripts and specifying `--network localhost` like this: `npx hardhat run scripts/wrapTokens.js --network localhost` and `npx hardhat run scripts/createFlow.js --network localhost`
+4. Head to your local console running on localhost:3000 and see your newly created stream in the 'Hardhat' tab!
 
 You’re up and running! Now you can use the console locally with your other work!
 

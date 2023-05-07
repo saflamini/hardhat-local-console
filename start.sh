@@ -41,10 +41,9 @@ sleep 10
   yarn
   sleep 5
   yarn prepare-local
-  sleep 5
+  sleep 3
   docker-compose up -d
-
-  sleep 10
+  sleep 60
 
   yarn build-and-deploy-local
 )
