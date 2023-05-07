@@ -12,7 +12,7 @@ However, it's much easier to tinker with new projects locally. This repo will he
 
 1. Start docker on your machine
 2. Run sh start.sh at root
-3. cd into ./subgraph and run `yarn deploy-local`
+3. OPTIONAL - if there were any errors with the subgraph cd into ./subgraph and run `yarn build-and-deploy-local`
 4. Create a stream in the example project folder to test it out by running the `wrapTokens` and `createFlow` scripts and specifying `--network localhost` like this: `npx hardhat run scripts/wrapTokens.js --network localhost` and `npx hardhat run scripts/createFlow.js --network localhost`
 5. Head to your local console running on localhost:3000 and see your newly created stream in the 'Hardhat' tab!
 
